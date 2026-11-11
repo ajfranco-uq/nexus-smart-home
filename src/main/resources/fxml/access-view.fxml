@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nexus.smarthome.presentation.controller.AccessController" styleClass="access-root">
+  <VBox alignment="CENTER" spacing="20" maxWidth="430" styleClass="access-card">
+    <padding><Insets top="42" right="42" bottom="42" left="42"/></padding>
+    <Label text="NEXUS" styleClass="brand-title"/>
+    <Label text="SMART HOME ECOSYSTEM" styleClass="brand-subtitle"/>
+    <Label text="Welcome home" styleClass="access-heading"/>
+    <Label text="Enter your personal access PIN to continue." styleClass="muted-text"/>
+    <PasswordField fx:id="pinField" promptText="Enter PIN" maxWidth="280" styleClass="pin-field"/>
+    <Button text="Unlock home" onAction="#handleAccess" maxWidth="280" styleClass="primary-button"/>
+    <Label fx:id="feedbackLabel" text="Demo PINs: Andres 1234 · Erika 2222 · Duke 3333" styleClass="feedback-label" wrapText="true"/>
+    <Label text="SECURE ACCESS · LOCAL DEMO" styleClass="tiny-label"/>
+  </VBox>
+</HBox>

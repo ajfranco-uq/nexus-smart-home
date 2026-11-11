@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nexus.smarthome.presentation.controller.OverviewController" spacing="20" styleClass="page-root">
+ <padding><Insets top="28" right="28" bottom="28" left="28"/></padding>
+ <VBox spacing="5"><Label text="Good to see you" styleClass="page-title"/><Label text="Your home status is now connected to the NEXUS domain services." styleClass="muted-text"/></VBox>
+ <GridPane hgap="14" vgap="14">
+  <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="metric-card"><Label text="HOUSE MODE" styleClass="metric-label"/><Label fx:id="houseModeLabel" text="AWAY" styleClass="metric-value green-text"/><Label fx:id="residentCountLabel" text="0 residents present" styleClass="metric-caption"/></VBox>
+  <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="metric-card"><Label text="TARGET TEMPERATURE" styleClass="metric-label"/><Label fx:id="temperatureLabel" text="20.0 °C" styleClass="metric-value"/><Label fx:id="climateStrategyLabel" text="Eco climate strategy" styleClass="metric-caption"/></VBox>
+  <VBox GridPane.columnIndex="2" GridPane.rowIndex="0" styleClass="metric-card"><Label text="SECURITY" styleClass="metric-label"/><Label fx:id="securityLabel" text="ARMED" styleClass="metric-value green-text"/><Label text="Automatic security policy" styleClass="metric-caption"/></VBox>
+  <VBox GridPane.columnIndex="3" GridPane.rowIndex="0" styleClass="metric-card"><Label text="CONNECTED DEVICES" styleClass="metric-label"/><Label text="18 / 20" styleClass="metric-value"/><Label text="Device simulation comes next" styleClass="metric-caption"/></VBox>
+ </GridPane>
+ <HBox spacing="14" VBox.vgrow="ALWAYS">
+  <VBox spacing="13" HBox.hgrow="ALWAYS" styleClass="content-card">
+   <Label text="Home overview" styleClass="section-title"/>
+   <GridPane hgap="12" vgap="12">
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="room-tile"><Label text="LIVING ROOM" styleClass="metric-label"/><Label text="Lights · Thermostat · Blinds" styleClass="room-description"/><Label text="Ready for device integration" styleClass="green-text"/></VBox>
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="room-tile"><Label text="KITCHEN" styleClass="metric-label"/><Label text="Refrigerator · Sensors" styleClass="room-description"/><Label text="Ready for device integration" styleClass="green-text"/></VBox>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="room-tile"><Label text="BEDROOM" styleClass="metric-label"/><Label text="Lights · Blinds · Music" styleClass="room-description"/><Label text="Ready for device integration" styleClass="green-text"/></VBox>
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="room-tile"><Label text="GARAGE" styleClass="metric-label"/><Label text="Vehicle · Garage door" styleClass="room-description"/><Label text="Ready for device integration" styleClass="green-text"/></VBox>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="room-tile"><Label text="ENTRANCE" styleClass="metric-label"/><Label text="Smart lock · Sensors" styleClass="room-description"/><Label text="Ready for device integration" styleClass="green-text"/></VBox>
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="room-tile"><Label text="HOME OFFICE" styleClass="metric-label"/><Label text="Lights · Blinds · Sensor" styleClass="room-description"/><Label text="Ready for device integration" styleClass="green-text"/></VBox>
+   </GridPane>
+  </VBox>
+  <VBox spacing="13" prefWidth="350" styleClass="content-card">
+   <Label text="Live activity" styleClass="section-title"/>
+   <Label fx:id="activityLabel" text="NEXUS system initialized" styleClass="event-detail" wrapText="true"/>
+   <Label text="PATTERNS ACTIVE" styleClass="metric-label"/>
+   <Label text="OBSERVER · STRATEGY · STATE · MEDIATOR" styleClass="pattern-chip" wrapText="true"/>
+   <Label text="Events are published by the domain and coordinated by the Home Coordinator." styleClass="event-detail" wrapText="true"/>
+  </VBox>
+ </HBox>
+</VBox>

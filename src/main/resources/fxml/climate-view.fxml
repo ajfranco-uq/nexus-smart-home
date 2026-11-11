@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nexus.smarthome.presentation.controller.ClimateController" spacing="14" styleClass="page-root">
+ <padding><Insets top="32" right="34" bottom="34" left="34"/></padding>
+ <Label text="Climate &amp; Environment" styleClass="page-title"/>
+ <Label text="The target temperature is recalculated whenever a resident arrives or leaves." styleClass="muted-text" wrapText="true"/>
+ <VBox spacing="10" styleClass="content-card">
+  <Label text="CURRENT CLIMATE TARGET" styleClass="metric-label"/>
+  <Label fx:id="targetTemperatureLabel" text="20.0 °C" styleClass="metric-value"/>
+  <Label fx:id="strategyLabel" text="Eco climate strategy" styleClass="green-text"/>
+  <Label text="Resident preferences" styleClass="section-title"/>
+  <VBox fx:id="preferencesContainer" spacing="10"/>
+ </VBox>
+ <Label text="Average strategy includes only residents currently at home. If nobody is home, the Eco strategy selects 20.0 °C. The target is constrained to 16–28 °C." styleClass="event-detail" wrapText="true"/>
+</VBox>

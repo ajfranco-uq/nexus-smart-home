@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+group = 'com.nexus'
+version = '3.0.0'
+repositories { mavenCentral() }
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+}
+
+test { useJUnitPlatform() }
+java { toolchain { languageVersion = JavaLanguageVersion.of(21) } }
+javafx { version = '21.0.6'; modules = ['javafx.controls', 'javafx.fxml'] }
+application { mainModule = 'com.nexus.smarthome'; mainClass = 'com.nexus.smarthome.NexusApplication' }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release = 21 }
+tasks.named('jar') { archiveFileName = 'nexus-smart-home.jar' }

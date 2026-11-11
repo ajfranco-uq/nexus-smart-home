@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" spacing="12" styleClass="page-root">
+ <padding><Insets top="32" right="34" bottom="34" left="34"/></padding>
+ <Label text="Voice Assistant" styleClass="page-title"/>
+ <Label text="Simulate spoken commands and inspect their interpreted actions." styleClass="muted-text" wrapText="true"/>
+ <VBox spacing="10" styleClass="content-card">
+  <Label text="Module foundation" styleClass="section-title"/>
+  <Label text="This screen is part of the NEXUS navigation foundation. Domain behavior and interactive controls will be implemented in subsequent iterations." styleClass="body-text" wrapText="true"/>
+  <Label text="Planned: domain model · application service · reusable components · tests" styleClass="pattern-chip" wrapText="true"/>
+ </VBox>
+</VBox>

@@ -1,0 +1,65 @@
+/* NEXUS Smart Home — Hybrid dark theme */
+.root { -fx-font-family: "Inter", "Segoe UI", sans-serif; -fx-background-color: #111827; -fx-text-fill: #E5E7EB; }
+.app-root, .page-root { -fx-background-color: #111827; }
+.sidebar { -fx-background-color: #0B1220; -fx-border-color: transparent #263449 transparent transparent; -fx-border-width: 0 1 0 0; }
+.sidebar-brand { -fx-text-fill: #F8FAFC; -fx-font-size: 25px; -fx-font-weight: bold; }
+.sidebar-subtitle { -fx-text-fill: #64748B; -fx-font-size: 9px; -fx-font-weight: bold; }
+.nav-section { -fx-text-fill: #64748B; -fx-font-size: 9px; -fx-font-weight: bold; -fx-padding: 10 0 1 7; }
+.nav-button { -fx-background-color: transparent; -fx-text-fill: #A8B4C5; -fx-alignment: CENTER_LEFT; -fx-padding: 9 11; -fx-background-radius: 8; -fx-font-size: 11px; -fx-cursor: hand; -fx-max-width: infinity; }
+.nav-button:hover { -fx-background-color: #1E293B; -fx-text-fill: white; }
+.nav-selected { -fx-background-color: #1D4ED8; -fx-text-fill: white; }
+.profile-chip { -fx-background-color: #172235; -fx-background-radius: 10; -fx-padding: 12; }
+.profile-name { -fx-text-fill: #F8FAFC; -fx-font-weight: bold; }
+.profile-role { -fx-text-fill: #94A3B8; -fx-font-size: 10px; }
+.topbar { -fx-background-color: #111827; -fx-border-color: transparent transparent #263449 transparent; }
+.topbar-title { -fx-text-fill: #64748B; -fx-font-size: 10px; -fx-font-weight: bold; }
+.online-label { -fx-text-fill: #34D399; -fx-font-size: 10px; -fx-font-weight: bold; }
+.page-title { -fx-text-fill: #F8FAFC; -fx-font-size: 27px; -fx-font-weight: bold; }
+.section-title { -fx-text-fill: #F1F5F9; -fx-font-size: 16px; -fx-font-weight: bold; }
+.muted-text { -fx-text-fill: #94A3B8; -fx-font-size: 12px; }
+.body-text { -fx-text-fill: #CBD5E1; -fx-font-size: 13px; }
+.metric-card, .content-card { -fx-background-color: #1E293B; -fx-background-radius: 13; -fx-border-color: #2B3A50; -fx-border-radius: 13; -fx-padding: 17; }
+.metric-label { -fx-text-fill: #94A3B8; -fx-font-size: 9px; -fx-font-weight: bold; }
+.metric-value { -fx-text-fill: #F8FAFC; -fx-font-size: 24px; -fx-font-weight: bold; }
+.metric-caption, .event-detail { -fx-text-fill: #94A3B8; -fx-font-size: 10px; }
+.green-text { -fx-text-fill: #34D399; -fx-font-weight: bold; }
+.warning-text { -fx-text-fill: #FBBF24; -fx-font-weight: bold; }
+.room-tile { -fx-background-color: #253449; -fx-background-radius: 10; -fx-padding: 14; -fx-spacing: 7; -fx-min-width: 165; }
+.room-description { -fx-text-fill: #CBD5E1; -fx-font-size: 10px; }
+.event-title { -fx-text-fill: #E2E8F0; -fx-font-size: 11px; -fx-font-weight: bold; }
+.pattern-chip { -fx-background-color: #312E81; -fx-text-fill: #C4B5FD; -fx-padding: 8 10; -fx-background-radius: 7; -fx-font-size: 9px; -fx-font-weight: bold; }
+.access-root { -fx-background-color: linear-gradient(to bottom right, #0B1220, #172B46, #111827); -fx-alignment: center; }
+.access-card { -fx-background-color: #1E293B; -fx-background-radius: 22; -fx-border-color: #334155; -fx-border-radius: 22; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 35, 0.2, 0, 12); }
+.brand-title { -fx-text-fill: #F8FAFC; -fx-font-size: 38px; -fx-font-weight: bold; }
+.brand-subtitle { -fx-text-fill: #60A5FA; -fx-font-size: 10px; -fx-font-weight: bold; }
+.access-heading { -fx-text-fill: #F8FAFC; -fx-font-size: 22px; -fx-font-weight: bold; }
+.pin-field { -fx-background-color: #0F172A; -fx-text-fill: #F8FAFC; -fx-prompt-text-fill: #64748B; -fx-background-radius: 9; -fx-border-color: #334155; -fx-border-radius: 9; -fx-padding: 13; }
+.primary-button { -fx-background-color: #2563EB; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 9; -fx-padding: 13 18; -fx-cursor: hand; }
+.primary-button:hover { -fx-background-color: #3B82F6; }
+.feedback-label { -fx-text-fill: #94A3B8; -fx-font-size: 10px; }
+.tiny-label { -fx-text-fill: #64748B; -fx-font-size: 8px; -fx-font-weight: bold; }
+.secondary-button { -fx-background-color: #334155; -fx-text-fill: #E2E8F0; -fx-font-weight: bold; -fx-background-radius: 9; -fx-padding: 10 14; -fx-cursor: hand; }
+.secondary-button:hover { -fx-background-color: #475569; }
+.resident-row, .event-row { -fx-background-color: #253449; -fx-background-radius: 9; -fx-padding: 12; }
+.event-row { -fx-text-fill: #CBD5E1; -fx-font-size: 11px; }
+
+/* Persistent teaching trace console */
+.pattern-console { -fx-background-color: #0B1220; -fx-border-color: #263449 transparent transparent transparent; -fx-border-width: 1 0 0 0; -fx-padding: 10 16 10 16; }
+.console-header { -fx-padding: 0 2 2 2; }
+.console-title { -fx-text-fill: #E2E8F0; -fx-font-size: 10px; -fx-font-weight: bold; }
+.console-live { -fx-text-fill: #34D399; -fx-font-size: 8px; -fx-font-weight: bold; -fx-background-color: #064E3B; -fx-background-radius: 5; -fx-padding: 4 7; }
+.console-count { -fx-text-fill: #64748B; -fx-font-size: 9px; }
+.console-clear-button { -fx-background-color: #1E293B; -fx-text-fill: #94A3B8; -fx-font-size: 9px; -fx-padding: 4 9; -fx-background-radius: 5; }
+.console-scroll, .console-scroll > .viewport { -fx-background-color: transparent; }
+.console-scroll > .scroll-bar:vertical { -fx-background-color: #0B1220; -fx-pref-width: 8; }
+.trace-container { -fx-padding: 2 4 4 2; }
+.trace-row { -fx-background-color: #111D2E; -fx-background-radius: 7; -fx-border-color: #263449; -fx-border-radius: 7; -fx-padding: 7 10; }
+.trace-time { -fx-text-fill: #64748B; -fx-font-size: 9px; }
+.trace-action { -fx-text-fill: #F1F5F9; -fx-font-size: 10px; -fx-font-weight: bold; }
+.trace-pattern { -fx-background-color: #312E81; -fx-text-fill: #C4B5FD; -fx-font-size: 8px; -fx-font-weight: bold; -fx-padding: 3 6; -fx-background-radius: 4; }
+.trace-pattern-none { -fx-background-color: #334155; -fx-text-fill: #CBD5E1; -fx-font-size: 8px; -fx-font-weight: bold; -fx-padding: 3 6; -fx-background-radius: 4; }
+.trace-status-success { -fx-text-fill: #34D399; -fx-font-size: 8px; -fx-font-weight: bold; }
+.trace-status-failed { -fx-text-fill: #F87171; -fx-font-size: 8px; -fx-font-weight: bold; }
+.trace-status-skipped { -fx-text-fill: #FBBF24; -fx-font-size: 8px; -fx-font-weight: bold; }
+.trace-description { -fx-text-fill: #CBD5E1; -fx-font-size: 9px; }
+.trace-source { -fx-text-fill: #60A5FA; -fx-font-size: 8px; }

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nexus.smarthome.presentation.controller.MainLayoutController" styleClass="app-root">
+ <left><VBox spacing="10" prefWidth="235" styleClass="sidebar">
+  <padding><Insets top="22" right="14" bottom="18" left="14"/></padding>
+  <Label text="NEXUS" styleClass="sidebar-brand"/><Label text="SMART HOME" styleClass="sidebar-subtitle"/>
+  <Button text="Overview" onAction="#showOverview" styleClass="nav-button nav-selected"/>
+  <Label text="HOME MANAGEMENT" styleClass="nav-section"/>
+  <Button text="Residents" onAction="#showResidents" styleClass="nav-button"/>
+  <Button text="Rooms &amp; Devices" onAction="#showRooms" styleClass="nav-button"/>
+  <Button text="Climate" onAction="#showClimate" styleClass="nav-button"/>
+  <Label text="LIFESTYLE" styleClass="nav-section"/>
+  <Button text="Kitchen &amp; Inventory" onAction="#showKitchen" styleClass="nav-button"/>
+  <Button text="Smart Wallet" onAction="#showWallet" styleClass="nav-button"/>
+  <Button text="Vehicle &amp; Garage" onAction="#showVehicle" styleClass="nav-button"/>
+  <Button text="Cleaning Robot" onAction="#showRobot" styleClass="nav-button"/>
+  <Label text="CONTROL CENTER" styleClass="nav-section"/>
+  <Button text="Security" onAction="#showSecurity" styleClass="nav-button"/>
+  <Button text="Automations &amp; Scenes" onAction="#showAutomation" styleClass="nav-button"/>
+  <Button text="Voice Assistant" onAction="#showVoice" styleClass="nav-button"/>
+  <Button text="Activity &amp; Patterns" onAction="#showActivity" styleClass="nav-button"/>
+  <Button text="Settings" onAction="#showSettings" styleClass="nav-button"/>
+  <VBox VBox.vgrow="ALWAYS"/>
+  <VBox styleClass="profile-chip"><Label fx:id="residentNameLabel" text="Resident" styleClass="profile-name"/><Label fx:id="residentRoleLabel" text="Role" styleClass="profile-role"/></VBox>
+ </VBox></left>
+ <center><VBox spacing="0">
+  <HBox alignment="CENTER_RIGHT" spacing="18" styleClass="topbar">
+   <padding><Insets top="16" right="28" bottom="16" left="28"/></padding>
+   <Label text="● SYSTEM ONLINE" styleClass="online-label"/>
+   <Label text="NEXUS CONTROL CENTER" styleClass="topbar-title"/>
+  </HBox>
+  <BorderPane fx:id="contentHost" VBox.vgrow="ALWAYS"/>
+  <VBox spacing="8" prefHeight="190" minHeight="170" maxHeight="190" styleClass="pattern-console">
+   <HBox alignment="CENTER_LEFT" spacing="10" styleClass="console-header">
+    <Label text="PATTERN ACTIVITY CONSOLE" styleClass="console-title"/>
+    <Label text="LIVE TRACE" styleClass="console-live"/>
+    <Label fx:id="traceCountLabel" text="0 entries" styleClass="console-count" HBox.hgrow="ALWAYS"/>
+    <Button text="Clear" onAction="#clearTraceHistory" styleClass="console-clear-button"/>
+   </HBox>
+   <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="console-scroll" VBox.vgrow="ALWAYS">
+    <content><VBox fx:id="traceContainer" spacing="6" styleClass="trace-container"/></content>
+   </ScrollPane>
+  </VBox>
+ </VBox></center>
+</BorderPane>
